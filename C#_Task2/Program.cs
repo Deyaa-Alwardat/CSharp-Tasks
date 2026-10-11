@@ -55,8 +55,9 @@ namespace C__Task2
 
             // Final Student Summary
             Console.WriteLine();
-            Console.WriteLine("       STUDENT SUMMARY");
 
+            Console.WriteLine("       STUDENT SUMMARY");
+            Console.WriteLine();
             Console.WriteLine("Welcome " + studentName.ToUpper() + "!");
             Console.WriteLine("Name: " + studentName);
             Console.WriteLine("Age: " + studentAge);
@@ -64,9 +65,11 @@ namespace C__Task2
             Console.WriteLine("Average: " + studentAverage);
             Console.WriteLine("New Average: " + newAverage);
             Console.WriteLine("Gender: " + studentGender);
-            Console.WriteLine("Result: " + (passed ? passed : passed));
+            Console.WriteLine("Result: " + (passed ? "Passed" : "Failed"));
             Console.WriteLine("Adult: " + adult);
 
+            
         }
+
     }
 }
