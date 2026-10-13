@@ -2,7 +2,7 @@
 
 class Student
 {
-    // Part 1: Properties
+    // Part 1
     public string Name;
     public int Age;
     public int Grade;
