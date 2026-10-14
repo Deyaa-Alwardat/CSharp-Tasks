@@ -4,11 +4,11 @@ using System;
 
 class Person
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
+    public string Name;
+    public int Age;
 
     // Protected: accessible inside Person and its derived classes.
-    protected string SchoolName { get; set; }
+    protected string SchoolName;
 
     // Private: accessible only inside the Person class.
     // It cannot be accessed directly from Main() or derived classes.
@@ -32,8 +32,8 @@ class Person
 
 class Student :Person
 {
-    public int Grade { get; set; }
-    public int StudentId { get; set; }
+    public int Grade;
+    public int StudentId;
     public Student(string name, int age, string schoolName,int grade, int studentId)
      : base(name, age, schoolName)
     {
@@ -55,11 +55,11 @@ class Student :Person
 class Teacher : Person
 {
     // Public auto-implemented property
-    public string Subject { get; set; }
+    public string Subject;
 
     // Constructor
     public Teacher(string name, int age, string schoolName, string subject)
-        : base(name, age, schoolName)
+    : base(name, age, schoolName)
     {
         Subject = subject;
     }
@@ -77,7 +77,7 @@ class Teacher : Person
 sealed class SchoolReport
 {
     // Public auto-implemented property
-    public string ReportTitle { get; set; }
+    public string ReportTitle;
 
     // Constructor receives the report title
     public SchoolReport(string reportTitle)

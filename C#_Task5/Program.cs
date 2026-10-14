@@ -12,7 +12,7 @@ class Program
 
         Console.WriteLine("=== Person Information ===");
         person1.DisplayInfo();
-
+        Console.WriteLine("");
         // Part 2: Create two Student objects
         Student student1 = new Student(
             "Nada", 18, "Al Amal School", 12, 101
